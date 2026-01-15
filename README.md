@@ -102,7 +102,7 @@ npm install
 3. Create a `.env` file (or use the existing one):
 ```env
 PORT=5000
-MONGODB_URI=mongodb://localhost:27017/ProductFinderDB
+MONGODB_URI=mongodb+srv://chrom123:chrom123@cluster0.fe9uidu.mongodb.net/?appName=Cluster0
 NODE_ENV=development
 ```
 
@@ -331,4 +331,5 @@ Developed as part of a technical assessment demonstrating proficiency in:
 
 ## 📄 License
 This project is created for assessment purposes.
+
 
