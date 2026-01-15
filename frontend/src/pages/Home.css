@@ -1,0 +1,48 @@
+.home-page {
+    flex: 1;
+    padding: 2rem 0;
+}
+
+.home-layout {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.filter-sidebar {
+    position: sticky;
+    top: 140px;
+    animation: slideIn 0.4s ease-out;
+}
+
+.products-main {
+    min-height: 500px;
+}
+
+.error-message {
+    background: linear-gradient(135deg, rgba(239, 68, 68, 0.1) 0%, rgba(239, 68, 68, 0.05) 100%);
+    border: 1px solid var(--error);
+    color: var(--error);
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    animation: fadeIn 0.3s ease-out;
+}
+
+.error-icon {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 968px) {
+    .home-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .filter-sidebar {
+        position: static;
+    }
+}
